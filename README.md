@@ -72,17 +72,11 @@ You should see the classic “Hello world” output.
 
 ---  
 
-## Training Materials  
+## Understanding ROS 2  
 
-| Material | Format | Description |
-|----------|--------|-------------|
-| Onboarding Guide | Markdown | Full walkthrough from installation to building your first package |
-| Intro Slides | PDF | 30‑minute presentation covering ROS 2 architecture, nodes, topics, services, and actions |
-| Hands‑On Notebook | Jupyter | Interactive examples for publishers, subscribers, and parameter handling |
-| Workshop Exercises | Bash / Python scripts | Small tasks that build a complete robot simulation (turtlesim, Nav2) |
-| Assessment Quiz | Markdown | 10 multiple‑choice questions to check comprehension after the workshop |
+For a better understanding of ROS 2, I recommend [this](https://www.amazon.com/Concise-Introduction-Robot-Programming-ROS2/dp/1032264659) book by Professor Francisco Martin Ricco, especially if you are going to programm anything to run on ROS.
 
-All materials are located under the `docs/` and `training/` directories.
+There are also an open documentation [here](https://docs.ros.org/en/rolling/index.html).
 
 ---  
 
@@ -128,25 +122,13 @@ Advanced (6+ hours)
   - Link: [ROS 2 Security Overview](https://docs.ros.org/en/humble/Tutorials/Security/Intro.html)
   - Try: experiment with QoS settings for unreliable networks.
 
-Tips for learning
-- Try each example in both Python and C++ to learn API differences.
-- Start with small focused exercises (publishers/subscribers/services) before moving to launch files and simulation.
-- Use the `training/` and `docs/` notebooks and slides for guided exercises.
-- Time estimates are approximate — adapt to learners' prior experience.
+See [here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html) the tutorial to create your own ROS 2 packages.
 
 ---  
 
-## Example Packages  
-
-* `demo_talker_listener` – Minimal publisher/subscriber pair  
-* `parameter_demo` – Shows runtime parameter changes  
-* `nav2_demo` – Launches a simulated robot with the navigation stack (requires Gazebo)
-
-See [here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html) the tutorial to create your own ROS 2 packages.
-
 ## Support & Community Forums  
 
-When you hit a roadblock, the ROS 2 community is very active. Below are the most commonly used places to ask questions and share knowledge:
+The ROS 2 community is very active. Below are the most commonly used places to ask questions and share knowledge:
 
 * **ROS Discourse** – https://discourse.ros.org/  
   Official discussion board; great for announcements, design questions, and longer‑form topics.  
@@ -169,7 +151,7 @@ Feel free to post your doubts in any of these venues; most members are happy to 
 
 ## Contributing  
 
-We welcome contributions! Please follow these steps:
+We welcome contributions to this repository, so it can become an entry point for the community! Please follow these steps:
 
 1. Fork the repository.  
 2. Create a feature branch (`git checkout -b feature/your-feature`).  
