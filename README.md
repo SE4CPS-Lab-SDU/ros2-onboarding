@@ -112,6 +112,7 @@ Advanced (6+ hours)
   - Link: [Composition Tutorial]([https://docs.ros.org/en/humble/Tutorials/Concepts/Composition.html](https://docs.ros.org/en/humble/Concepts/Intermediate/About-Composition.html)
 - Simulation with Gazebo / Ignition & Navigation2 (Nav2):
   - Nav2 Docs: [Navigation2 Guide]([https://navigation.ros.org/](https://docs.nav2.org/)
+  - Try: run Docker's GUI and [this](https://github.com/IntelAgir-Research-Group/RL4GreenROS-Dev?tab=readme-ov-file#running-gui-from-docker) simple example. 
 
 See [here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html) the tutorial to create your own ROS 2 packages.
 
@@ -119,24 +120,25 @@ See [here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Cr
 
 ## Support & Community Forums  
 
-The ROS 2 community is very active. Below are the most commonly used places to ask questions and share knowledge:
+The ROS 2 community is very active as you can see [here](https://www.ros.org/blog/community/). Below are the most commonly used places to ask questions and share knowledge:
 
 * **ROS Discourse** – https://discourse.ros.org/  
   Official discussion board; great for announcements, design questions, and longer‑form topics.  
 
-* **ROS Answers** – https://answers.ros.org/  
-  Stack‑Overflow‑style Q&A site; ideal for specific technical problems and code snippets.  
-
 * **ROS 2 Slack** – https://ros-community.slack.com/ (invite via https://slack.ros.org/)  
-  Real‑time chat with channels for navigation, perception, simulation, and more.  
-
-* **ROS 2 GitHub Discussions** – https://github.com/ros2/ros2/discussions  
-  Used for feature proposals, RFCs, and community polls.  
-
-* **r/ROS2 subreddit** – https://www.reddit.com/r/ROS2/  
-  Casual community where you can share tutorials, ask for advice, and stay updated on events.  
+  Real‑time chat with channels for navigation, perception, simulation, and more.   
 
 Feel free to post your doubts in any of these venues; most members are happy to help.
+
+---
+
+## Some of our ROS repositories
+
+| Name | Description | Link |
+|------------|----------------------|--------------|
+| Docker GUI | How to run a GUI interface inside Docker. | [link](https://github.com/IntelAgir-Research-Group/RL4GreenROS-Dev?tab=readme-ov-file#running-gui-from-docker) |
+| ROS 2 Reconf | Experiment for ROS 2 reconfiguration that brings up some Gazebo simulation. | [link](https://github.com/IntelAgir-Research-Group/ROS2-EE-Reconf) |
+| Past Projects | Some interesting projects we worked on the past that may be a source of insperation. | [link](https://github.com/S2-group/ros-configurations) |
 
 ---  
 
