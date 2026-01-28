@@ -1,14 +1,13 @@
 # ROS 2 Onboarding & Training Materials  
 
-Welcome to the **ROS 2 Onboarding** repository – a one‑stop source for getting new developers up to speed with ROS 2 and providing hands‑on training resources.
+Welcome to the **ROS 2 Onboarding** repository – a source for getting new researchers up to speed with ROS 2 and providing starting hands‑on training resources.
 
 ---  
 
 ## Overview  
 
-* Step‑by‑step onboarding guide for ROS 2 (Foxy, Humble, Iron)  
+* Step‑by‑step onboarding guide for ROS 2 (Humble)  
 * Example packages and launch files that illustrate core concepts  
-* Jupyter notebooks and slide decks for classroom‑style training  
 * Scripts to set up a development environment on Ubuntu 22.04 (Docker and native options)  
 
 The goal is to reduce ramp‑up time for newcomers and give instructors ready‑made material for workshops or internal courses.
@@ -141,32 +140,9 @@ Tips for learning
 
 * `demo_talker_listener` – Minimal publisher/subscriber pair  
 * `parameter_demo` – Shows runtime parameter changes  
-* `nav2_demo` – Launches a simulated robot with the navigation stack (requires Gazebo)  
+* `nav2_demo` – Launches a simulated robot with the navigation stack (requires Gazebo)
 
-Build any package with:
-
-```bash
-colcon build --packages-select <package_name>
-source install/setup.bash
-```
-
----  
-
-## Main Tutorials & External Resources  
-
-| Resource | Type | Highlights |
-|----------|------|------------|
-| ROS 2 Official Tutorials | Web | Up‑to‑date step‑by‑step guides for every core concept |
-| *Programming Robots with ROS 2* – Francisco Martin Ricco | Book | In‑depth coverage, real‑world examples, best practices for large projects |
-| ROS‑Answers | Q&A forum | Community‑driven troubleshooting, quick problem solving |
-| The Construct – ROS 2 Courses | Online course | Interactive Jupyter‑based lessons from beginner to advanced |
-| ROS 2 Design Docs | Repository | Detailed explanations of middleware, lifecycle, and security |
-| Navigation2 (Nav2) Guide | Documentation | Complete walkthrough for autonomous navigation in simulation and on hardware |
-| ROS 2 for Embedded Systems | Blog series | Tips for running ROS 2 on low‑power platforms (Raspberry Pi, Jetson Nano) |
-
-Add additional links in `EXTERNAL_RESOURCES.md` as the community discovers new material.
-
----  
+See [here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html) the tutorial to create your own ROS 2 packages.
 
 ## Support & Community Forums  
 
@@ -200,8 +176,6 @@ We welcome contributions! Please follow these steps:
 3. Make your changes and ensure they pass `flake8` / `black` checks.  
 4. Submit a pull request with a clear description of the changes.  
 
-See `CONTRIBUTING.md` for detailed guidelines.
-
 ---  
 
 ## License  
@@ -212,7 +186,7 @@ This project is licensed under the **Apache License 2.0**. See `LICENSE` for the
 
 ## Contact  
 
-* **Maintainer:** [Your Name] – `your.email@example.com`  
+* **Maintainer:** [Michel Albonico] – `mical@mmmi.sdu.dk`  
 * **Issues & feature requests:** Open a GitHub issue in this repository.  
 
 ---  
