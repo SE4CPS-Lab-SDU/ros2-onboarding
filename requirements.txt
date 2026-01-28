@@ -1,0 +1,16 @@
+# Core ROS‑2 Python utilities
+rclpy>=3.0
+ros2topic>=0.0.0  # optional, useful for quick topic inspection
+
+# Jupyter & notebook support
+jupyterlab>=4.0
+ipykernel>=6.0
+
+# Visualization / data handling (optional but handy for training)
+matplotlib>=3.8
+pandas>=2.2
+numpy>=1.26
+
+# Linting / code quality (used in CI)
+flake8>=7.0
+black>=24.0
