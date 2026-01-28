@@ -74,7 +74,7 @@ You should see the classic “Hello world” output.
 
 ## Understanding ROS 2  
 
-For a better understanding of ROS 2, I recommend [this](https://www.amazon.com/Concise-Introduction-Robot-Programming-ROS2/dp/1032264659) book by Professor Francisco Martin Ricco, especially if you are going to programm anything to run on ROS.
+For a better understanding of ROS 2, I recommend [this](https://www.amazon.com/Concise-Introduction-Robot-Programming-ROS2/dp/1032264659) book by Professor Francisco Martin Rico, especially if you are going to programm anything to run on ROS.
 
 There are also an open documentation [here](https://docs.ros.org/en/rolling/index.html).
 
