@@ -87,6 +87,56 @@ All materials are located under the `docs/` and `training/` directories.
 
 ---  
 
+## Recommended hands‑on tutorials (suggested order)
+
+Below are core tutorials and exercises that we recommend learners follow to become comfortable with ROS 2. The list is intentionally practical — each entry includes a short exercise you can run locally (or inside the Docker container).
+
+Beginner (1–3 hours)
+- ROS 2 Official Tutorials — Getting started with ROS 2 (Python & C++):
+  - Link: [ROS 2 Tutorials](https://docs.ros.org/en/rolling/Tutorials.html)
+  - Try: run the talker/listener examples in both Python and C++:
+    - `ros2 run demo_nodes_py talker` and `ros2 run demo_nodes_py listener`
+- Topics & Messages — publish/subscribe fundamentals:
+  - Link: [Writing a Simple Publisher and Subscriber](https://docs.ros.org/en/humble/Tutorials/Beginner/Publishing-Subscriber.html)
+  - Try: create a simple publisher and subscriber using `rclpy` or `rclcpp`.
+- Parameters — configuring nodes at runtime:
+  - Link: [Parameters Tutorial](https://docs.ros.org/en/humble/Tutorials/Basic/Parameters.html)
+  - Try: set and get parameters via `ros2 param set /node param_name value`.
+
+Intermediate (3–6 hours)
+- Services & Actions — request/response and long-running goals:
+  - Link (service): [Services and Service Clients](https://docs.ros.org/en/humble/Tutorials/Concepts/Services.html)
+  - Link (actions): [Actions Tutorial](https://docs.ros.org/en/humble/Tutorials/Concepts/Actions.html)
+  - Try: implement a simple service and an action server/client pair.
+- Launch system & composition — start complex systems reproducibly:
+  - Link: [Launch Tutorial](https://docs.ros.org/en/humble/Tutorials/Launch/Introducing-ROS2-Launch.html)
+  - Try: write a `launch.py` that starts two nodes and remaps topics.
+- ROS 2 CLI tools & introspection:
+  - Try: `ros2 topic list`, `ros2 topic echo /chatter`, `ros2 node list`, `ros2 service list`, `ros2 param list`.
+- rosbag2 — recording & replay:
+  - Try: `ros2 bag record -a` and `ros2 bag play <bag>`.
+
+Advanced (6+ hours)
+- Composition & lifecycle nodes:
+  - Link: [Composition Tutorial](https://docs.ros.org/en/humble/Tutorials/Concepts/Composition.html)
+  - Link: [Node Lifecycle](https://design.ros2.org/articles/node_lifecycle.html)
+- Simulation with Gazebo / Ignition & Navigation2 (Nav2):
+  - Nav2 Docs: [Navigation2 Guide](https://navigation.ros.org/)
+  - Try: launch the `nav2_demo` package (requires Gazebo) and drive the robot in simulation.
+- Debugging, logging, and testing:
+  - Try: use `rqt`, `rviz2`, and write simple unit/integration tests for nodes.
+- Security & DDS tuning:
+  - Link: [ROS 2 Security Overview](https://docs.ros.org/en/humble/Tutorials/Security/Intro.html)
+  - Try: experiment with QoS settings for unreliable networks.
+
+Tips for learning
+- Try each example in both Python and C++ to learn API differences.
+- Start with small focused exercises (publishers/subscribers/services) before moving to launch files and simulation.
+- Use the `training/` and `docs/` notebooks and slides for guided exercises.
+- Time estimates are approximate — adapt to learners' prior experience.
+
+---  
+
 ## Example Packages  
 
 * `demo_talker_listener` – Minimal publisher/subscriber pair  
