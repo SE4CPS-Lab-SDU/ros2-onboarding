@@ -1,2 +1,170 @@
-# ros2-onboarding
-Repository used by new students to get started with ROS 2.
+# ROS 2 Onboarding & Training Materials  
+
+Welcome to the **ROS 2 Onboarding** repository – a one‑stop source for getting new developers up to speed with ROS 2 and providing hands‑on training resources.
+
+---  
+
+## Overview  
+
+* Step‑by‑step onboarding guide for ROS 2 (Foxy, Humble, Iron)  
+* Example packages and launch files that illustrate core concepts  
+* Jupyter notebooks and slide decks for classroom‑style training  
+* Scripts to set up a development environment on Ubuntu 22.04 (Docker and native options)  
+
+The goal is to reduce ramp‑up time for newcomers and give instructors ready‑made material for workshops or internal courses.
+
+---  
+
+## Prerequisites  
+
+| Requirement | Recommended version |
+|------------|----------------------|
+| Ubuntu | 22.04 LTS |
+| ROS 2 | Humble (or Foxy / Iron) |
+| Python | 3.10+ |
+| Docker (optional) | 24.0+ |
+| Git | latest |
+
+> **Tip:** If you prefer not to install ROS 2 locally, use the provided Docker image (see *Installation*).
+
+---  
+
+## Installation  
+
+### 1. Clone the repository  
+
+```bash
+git clone https://github.com/your-org/ros2-onboarding.git
+cd ros2-onboarding
+```
+
+### 2. Choose an installation method  
+
+#### a) Native (Ubuntu)  
+
+```bash
+# Install ROS 2 Humble (example)
+sudo apt update && sudo apt install ros-humble-desktop
+
+# Source the ROS environment
+source /opt/ros/humble/setup.bash
+
+# Install Python dependencies
+pip install -r requirements.txt
+```
+
+#### b) Docker (recommended for quick start)  
+
+```bash
+# Build the image
+docker build -t ros2-onboarding:humble .
+
+# Run a container with the repo mounted
+docker run -it --rm -v $(pwd):/workspace ros2-onboarding:humble bash
+```
+
+### 3. Verify the setup  
+
+```bash
+ros2 run demo_nodes_cpp talker
+```
+
+You should see the classic “Hello world” output.
+
+---  
+
+## Training Materials  
+
+| Material | Format | Description |
+|----------|--------|-------------|
+| Onboarding Guide | Markdown | Full walkthrough from installation to building your first package |
+| Intro Slides | PDF | 30‑minute presentation covering ROS 2 architecture, nodes, topics, services, and actions |
+| Hands‑On Notebook | Jupyter | Interactive examples for publishers, subscribers, and parameter handling |
+| Workshop Exercises | Bash / Python scripts | Small tasks that build a complete robot simulation (turtlesim, Nav2) |
+| Assessment Quiz | Markdown | 10 multiple‑choice questions to check comprehension after the workshop |
+
+All materials are located under the `docs/` and `training/` directories.
+
+---  
+
+## Example Packages  
+
+* `demo_talker_listener` – Minimal publisher/subscriber pair  
+* `parameter_demo` – Shows runtime parameter changes  
+* `nav2_demo` – Launches a simulated robot with the navigation stack (requires Gazebo)  
+
+Build any package with:
+
+```bash
+colcon build --packages-select <package_name>
+source install/setup.bash
+```
+
+---  
+
+## Main Tutorials & External Resources  
+
+| Resource | Type | Highlights |
+|----------|------|------------|
+| ROS 2 Official Tutorials | Web | Up‑to‑date step‑by‑step guides for every core concept |
+| *Programming Robots with ROS 2* – Francisco Martin Ricco | Book | In‑depth coverage, real‑world examples, best practices for large projects |
+| ROS‑Answers | Q&A forum | Community‑driven troubleshooting, quick problem solving |
+| The Construct – ROS 2 Courses | Online course | Interactive Jupyter‑based lessons from beginner to advanced |
+| ROS 2 Design Docs | Repository | Detailed explanations of middleware, lifecycle, and security |
+| Navigation2 (Nav2) Guide | Documentation | Complete walkthrough for autonomous navigation in simulation and on hardware |
+| ROS 2 for Embedded Systems | Blog series | Tips for running ROS 2 on low‑power platforms (Raspberry Pi, Jetson Nano) |
+
+Add additional links in `EXTERNAL_RESOURCES.md` as the community discovers new material.
+
+---  
+
+## Support & Community Forums  
+
+When you hit a roadblock, the ROS 2 community is very active. Below are the most commonly used places to ask questions and share knowledge:
+
+* **ROS Discourse** – https://discourse.ros.org/  
+  Official discussion board; great for announcements, design questions, and longer‑form topics.  
+
+* **ROS Answers** – https://answers.ros.org/  
+  Stack‑Overflow‑style Q&A site; ideal for specific technical problems and code snippets.  
+
+* **ROS 2 Slack** – https://ros-community.slack.com/ (invite via https://slack.ros.org/)  
+  Real‑time chat with channels for navigation, perception, simulation, and more.  
+
+* **ROS 2 GitHub Discussions** – https://github.com/ros2/ros2/discussions  
+  Used for feature proposals, RFCs, and community polls.  
+
+* **r/ROS2 subreddit** – https://www.reddit.com/r/ROS2/  
+  Casual community where you can share tutorials, ask for advice, and stay updated on events.  
+
+Feel free to post your doubts in any of these venues; most members are happy to help.
+
+---  
+
+## Contributing  
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository.  
+2. Create a feature branch (`git checkout -b feature/your-feature`).  
+3. Make your changes and ensure they pass `flake8` / `black` checks.  
+4. Submit a pull request with a clear description of the changes.  
+
+See `CONTRIBUTING.md` for detailed guidelines.
+
+---  
+
+## License  
+
+This project is licensed under the **Apache License 2.0**. See `LICENSE` for the full text.
+
+---  
+
+## Contact  
+
+* **Maintainer:** [Your Name] – `your.email@example.com`  
+* **Issues & feature requests:** Open a GitHub issue in this repository.  
+
+---  
+
+*Happy coding and welcome to the ROS 2 community!*
