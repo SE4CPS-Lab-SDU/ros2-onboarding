@@ -155,7 +155,7 @@ We welcome contributions to this repository, so it can become an entry point for
 
 ## License  
 
-This project is licensed under the **Apache License 2.0**. See `LICENSE` for the full text.
+This project is licensed under the **MIT LICENSE**. See `LICENSE` for the full text.
 
 ---  
 
